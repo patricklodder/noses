@@ -1,0 +1,30 @@
+{
+  "name": "noses",
+  "version": "0.0.1",
+  "description": "NoSes: Token/Cookie provider for session-less node.js apps",
+  "author": "Patrick Lodder",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/patricklodder/noses.git"
+  },
+  "bugs": { "url": "http://github.com/patricklodder/noses/issues" },
+  "engines": {
+    "node": "=0.10.x"
+  },
+  "licenses": [
+    { "type": "MIT",
+      "url": "http://github.com/patricklodder/noses/raw/master/LICENSE"
+    }
+  ],
+  "directories": {
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "devDependencies": {
+      "vows": "=0.7.x"
+  },
+  "main": "./lib/noses.js",
+  "scripts": {
+    "test": "node_modules/.bin/vows --spec test/*.js"
+  }
+}
