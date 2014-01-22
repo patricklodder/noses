@@ -109,4 +109,4 @@ function expireIn (msec) {
 	var exp = new Date();
 	exp.setMilliseconds(exp.getMilliseconds() + msec);
 	return exp;
-};
+}

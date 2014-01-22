@@ -33,12 +33,12 @@ vows.describe('noses').addBatch({
 				http.get(c, function (res) {
 					cb(null, res.headers['set-cookie'][0]);
 				});
-			}
-			, "must reply with a cookie": function (err, cookie) {
+			},
+			"must reply with a cookie": function (err, cookie) {
 				assert.isNull(err);
 				assert.isString(cookie);
-			}
-			, "and replaying the cookie": {
+			},
+			"and replaying the cookie": {
 				topic: function (cookie) {
 					var cb = this.callback;
 					var c = {hostname: 'localhost', port: PORT, path: '/', headers: {'Cookie': cookie}};
@@ -48,7 +48,7 @@ vows.describe('noses').addBatch({
 						res.on('end', function () {
 							cb(null, buf, res.headers);
 						});
-					})
+					});
 				},
 				"must not throw an error": function (e,b,h) {
 					assert.isNull(e);
