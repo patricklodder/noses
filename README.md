@@ -2,6 +2,8 @@ NoSes
 ======
 Token/Cookie provider for session-less node.js apps
 
+[![Build Status](https://travis-ci.org/patricklodder/noses.png)](https://travis-ci.org/patricklodder/noses)
+
 ### Installlation
 ```
 npm install noses
