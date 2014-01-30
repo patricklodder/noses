@@ -1,6 +1,6 @@
 {
   "name": "noses",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "NoSes: Token/Cookie provider for session-less node.js apps",
   "author": "Patrick Lodder",
   "repository": {
